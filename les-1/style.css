@@ -2,3 +2,7 @@ p{
     background-color: gold;
     margin-left: 120px;
 }
+
+body p{
+    background-color: chartreuse;
+}
