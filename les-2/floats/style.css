@@ -1,0 +1,32 @@
+header{
+    height: 35px;
+    width: 100%;
+    background-color: red;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+}
+header li{
+    height: 25px;
+    margin: 5px;
+    float: right;
+    list-style: none;
+    width: 75px;
+}
+
+.blauw{
+    background-color: blue;
+
+    float: left;
+}
+
+.paars{
+    background-color: purple;
+}
+.groen{
+    background-color: green;
+}
+.geel{
+    background-color: yellow;
+}
