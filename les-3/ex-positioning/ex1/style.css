@@ -1,0 +1,29 @@
+.container{
+    width: 700px;
+    margin: auto;
+}
+.right{
+    width: 200px;
+    height: 500px;
+    background-color: yellow;
+    float: right;
+}
+.top{
+    width: 500px;
+    height: 200px;
+    background-color: green;
+    float: left;
+    
+}
+.left{
+    width: 200px;
+    height: 500px;
+    background-color: red;
+    float: left;
+}
+.bottom{
+    width: 500px;
+    height: 200px;
+    background-color: purple;
+    float: right;
+}
