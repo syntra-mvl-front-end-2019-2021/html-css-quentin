@@ -24,6 +24,14 @@ body {
     color: grey;
     background-color: lightgray;
 }
+nav{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #3298dc;
+}
 
 header {
     height: 50px;
@@ -32,7 +40,10 @@ header {
     display: flex;
     justify-content: center;
 }
-
+.container{
+    width: 1300px;
+    margin: auto;
+}
 .logo {
     width: 40%;
 }
@@ -61,22 +72,24 @@ header {
 .bottom-header {
     background-color: #3298dc;
     color: white;
-    display: flex;
     justify-content: center;
     height: 400px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.bottom-header .text{
+    max-width: 750px;
+   margin: auto;
+}
+.bottom-header h4,.bottom-header p{
+   text-align: center;
+   max-width: 750px;
+   margin: auto;
+
 }
 
-.bottom-header-text {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 28px;
-    width: 50%;
-}
-
-.bottom-header-text p {
-    margin: 0px 0px 40px 0px;
-    font-size: 20px;
-}
 
 .slogan {
     margin: auto;
@@ -85,7 +98,6 @@ header {
 
 .slogan p{
     padding: 15px;
-    width: 80%;
     text-align: center;
     margin: auto;
 }
@@ -93,7 +105,6 @@ header {
 .columns {
     margin: 20px auto;
     margin-top: 50px;
-    width: 80%;
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
@@ -106,6 +117,9 @@ header {
     padding: 10px;
     width: 320px;
     text-align: center;
+}
+.columns-content p{
+    padding: 25px;
 }
 
 .columns-content img {
@@ -138,16 +152,10 @@ footer {
 }
 
 .middle-title {
-    width: 80%;
-    margin: auto;
-    padding: 60px;
+    margin: 60px auto;
     text-align: center;
 }
 
-.middle {
-    margin: auto;
-    width: 80%;
-}
 
 .first-row {
     display: flex;
@@ -171,7 +179,7 @@ footer {
     padding-left: 20px;
 }
 
-.container {
+.container-box {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -206,7 +214,7 @@ footer {
 }
 
 .container-content-left-top-right img {
-    width: 100%;
+    width: 50%;
     padding: 20px;
 }
 
@@ -245,8 +253,13 @@ footer {
 .row-col p {
     margin: 15px;
 }
-
-@media screen and (max-width: 800px){
+footer{
+    margin-top: 50px;
+}
+@media screen and (max-width: 1300px){
+    .container{
+        width: 85%;
+    }
     .logo{
         width: 20%;
     }
@@ -259,12 +272,6 @@ footer {
         text-align: center;
         font-size: 34px;
     }
-    .bottom-header p{
-        display: none;
-    }
-    .columns{
-        width: 90%;
-    }
     .columns .columns-content img{
         margin:25px 0;
 
@@ -273,10 +280,352 @@ footer {
         padding: 40px;
         font-size: 20px;
     }
-    .middle{
-        width: 90%;
-    }
     footer .footer-column{
         width: 90%;
     }
+}
+/*
+@media screen and (max-width: 700px){
+    .container{
+        width: 100%;
+        padding: 0px 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .columns{
+        flex-direction: column;
+    }
+    .columns-content{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .columns-content img{
+        width: 150px;
+    }
+    .first-row{
+        flex-direction: column;
+
+    }
+    .first-row-content{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .container-box{
+        flex-direction: column;
+    }
+    .container-content-left{
+        width: 100%;
+    }
+    .container-content-left-top{
+        flex-direction: column;
+    }
+    .container-content-left-top div{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .container-content-right{
+        width: 100%;
+        margin:20px 0px;
+    }
+    .row-col{
+        width: 50%;
+        margin: 0px 15px;
+    }
+    footer{
+        margin-top: 50px;
+    }
+    .footer-column{
+        flex-direction: column;
+    }
+    footer .column{
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+    }
+    footer .column a{
+        padding: 10px;
+    }
+}
+*/
+@media screen and (max-width: 600px){
+    .columns{
+        flex-direction: column;
+    }
+    .columns-content{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .columns-content img{
+        width: 150px;
+    }
+    .first-row{
+        flex-direction: column;
+
+        
+    }
+    .first-row-content{
+        width: 100%;
+        margin: 20px 0px;
+        padding: 25px ;
+        border-top:solid 1px #3298dc;
+    }
+    .container-box{
+        margin:  0px;
+        padding:0 ;   
+    }
+    .container-box .container-content-left{
+        padding: 0px;
+    }
+    .container-box .container-content-left-top-left div{
+        padding: 25px;
+    }
+    .container-box .container-content-left-top-left div h4{
+        padding: 0;
+    }
+    .container-content-left-bottom{
+        border-top: solid 1px #3298dc;
+        padding:25px;
+    }
+    .first-row-content:last-child{
+        border-bottom:solid 1px #3298dc;
+    }
+    .columns div{
+        margin:0px;
+        border-radius: 0px;
+        border-top: solid 1px #3298dc;
+        padding: 20px 0px;
+    }
+    .columns div:last-child{
+        border-bottom:solid 1px #3298dc;
+    }
+    .container-box{
+        flex-direction: column;
+    }
+    .container-content-left{
+        width: 100%;
+    }
+    .container-content-left-top{
+        flex-direction: column;
+    }
+    .container-content-left-top div{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .container-content-right{
+        width: 100%;
+        margin:20px 0px;
+    }
+    section.container div:first-child div{
+        margin: 0;
+    }
+    section.container p{
+        padding: 0;
+        
+    }
+    footer{
+        margin-top: 50px;
+    }
+    .footer-column{
+        flex-direction: column;
+    }
+    footer .column{
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+    }
+    footer .column a{
+        padding: 10px;
+    }
+    .middle-title{
+        border-top: none;
+    }
+    .top-menu{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        padding: 0%;
+    }
+    .container div{
+
+        border-radius: 0;
+    }
+    .container .row{
+        flex-direction: column;
+    }
+    .row-col{
+        width: 100%;
+        margin:20px  0;
+    }
+    .row-col-sm {
+        width: 100%;
+    }
+    .row-col-lg {
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    header{
+        position: relative;
+        height: 100px;
+    }
+    .columns{
+        margin:0;
+    }
+    .columns-content{
+        margin: 0;
+    }
+    header nav{
+        display: block;
+    }
+   
+            /*  hamburger menu */
+
+            #menuToggle
+            {
+            display: block;
+            position: fixed;
+            top: 50px;
+            left: 17px;
+            padding: 6px;
+            border-radius: 9px;
+            background-color: #3298dc;
+            
+            z-index: 1;
+            
+            -webkit-user-select: none;
+            user-select: none;
+            }
+
+            #menuToggle a
+            {
+            text-decoration: none;
+            color: #232323;
+            
+            transition: color 0.3s ease;
+            }
+
+            #menuToggle a:hover
+            {
+            color: #3298dc;
+            }
+
+
+            #menuToggle input
+            {
+            display: block;
+            width: 40px;
+            height: 32px;
+            position: absolute;
+            top: -7px;
+            left: -5px;
+            
+            cursor: pointer;
+            
+            opacity: 0; /* hide this */
+            z-index: 2; /* and place it over the hamburger */
+            
+            -webkit-touch-callout: none;
+            }
+
+            /*
+            * Just a quick hamburger
+            */
+            #menuToggle span
+            {
+            display: block;
+            width: 33px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            
+            background: #ffffff;
+            border-radius: 3px;
+            
+            z-index: 1;
+            
+            transform-origin: 4px 0px;
+            
+            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                        opacity 0.55s ease;
+            }
+
+            #menuToggle span:first-child
+            {
+            transform-origin: 0% 0%;
+            }
+
+            #menuToggle span:nth-last-child(2)
+            {
+            transform-origin: 0% 100%;
+            }
+
+            /* 
+            * Transform all the slices of hamburger
+            * into a crossmark.
+            */
+            #menuToggle input:checked ~ span
+            {
+            opacity: 1;
+            transform: rotate(45deg) translate(-2px, -1px);
+            background: #232323;
+            }
+
+            /*
+            * But let's hide the middle one.
+            */
+            #menuToggle input:checked ~ span:nth-last-child(3)
+            {
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2);
+            }
+
+            /*
+            * Ohyeah and the last one should go the other direction
+            */
+            #menuToggle input:checked ~ span:nth-last-child(2)
+            {
+            transform: rotate(-45deg) translate(0, -1px);
+            }
+
+            /*
+            * Make this absolute positioned
+            * at the top left of the screen
+            */
+            #menu
+            {
+            position: absolute;
+            width: 300px;
+            margin: -100px 0 0 -50px;
+            padding: 50px;
+            padding-top: 125px;
+            
+            background: #ededed;
+            list-style-type: none;
+            -webkit-font-smoothing: antialiased;
+            /* to stop flickering of text in safari */
+            
+            transform-origin: 0% 0%;
+            transform: translate(-100%, 0);
+            
+            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+            }
+
+            #menu li
+            {
+            padding: 10px 0;
+            font-size: 22px;
+            }
+
+            /*
+            * And let's slide it in from the left
+            */
+            #menuToggle input:checked ~ ul
+            {
+            transform: none;
+            }
+
 }

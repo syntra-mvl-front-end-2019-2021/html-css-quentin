@@ -9,6 +9,37 @@
     </head>
     <body>
         <header>
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                  <input type="checkbox" />
+                  
+                  <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                  <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Info</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                  </ul>
+                </div>
+              </nav>
             <div class="logo">
                 <img src="voov.gif" alt="Voov logo" />
             </div>
@@ -29,24 +60,28 @@
                     <a href="#">Help</a>
                 </div>
             </div>
+            
         </header>
         <div class="bottom-header">
-            
-                <h4>The new standard in blabla</h4>
+            <div class="text">
+                
+                <h4>The new standard in blabla</h4><br></h4>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
+            </div>
+            
         </div>
         <div class="slogan">
-            <p>
+            <p class="container">
                 New Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat.
             </p>
         </div>
-        <div class="columns">
+        <div class="columns container">
             <div class="columns-content">
                 <img src="https://picsum.photos/100/100" alt="Gezicht" />
                 <h4>Dit is een test titel...</h4>
@@ -79,7 +114,7 @@
                 </p>
             </div>
         </div>
-        <div class="middle-title">
+        <div class="middle-title container">
             <div>
                 <h4>Perfect for developers or designers!</h4>
                 <p>
@@ -89,7 +124,7 @@
                 </p>
             </div>
         </div>
-        <section class="middle">
+        <section class="container">
             <div class="first-row">
                 <div class="first-row-content">
                     <h1>Hello World!</h1>
@@ -109,7 +144,7 @@
                     </p>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-box">
                 <div class="container-content-left">
                     <div class="container-content-left-top">
                         <div class="container-content-left-top-left">
